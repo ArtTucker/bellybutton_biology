@@ -1,0 +1,21 @@
+body {
+    color: #8bf5cc;
+}
+
+.jumbotron {
+    background-image: url("../images/elecMRSA2.jpg");
+    background-size: 100%;
+    text-align: center;
+}
+
+select {
+    color:cyan;
+    border: 2px solid #aeaeb5;
+    border-radius: 6px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #26bf47;
+    box-shadow: 0 0 10px #26bf47;
+}
