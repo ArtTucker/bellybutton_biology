@@ -112,7 +112,8 @@ function buildCharts(sample) {
       title: 'Top 10 Bacteria Cultures Found',
       //xaxis: {title: 'Number of Species'},
       yaxis: {title: 'OTU IDs'},
-      width: 750
+      width: 550,
+      //margin: {l: 1, r:0}
     };
     // Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar', barData, barLayout);
@@ -144,11 +145,13 @@ function buildCharts(sample) {
 
     // 4. Create the trace for the gauge chart.
     var gaugeData = [{
+      domain: {x: [0,1], y: [0,1]},
       value: washFreq,
       type: 'indicator',
       mode: 'gauge+number',
       title: {text: 'Belly Button Washing Freq.<br>Scrubs per Week'},
       gauge: {
+        axis: {range: [0,10]},
         steps: [
           {range: [0,2], color: "red"},
           {range: [2,4], color: "orange"},
