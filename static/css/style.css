@@ -1,21 +1,42 @@
 body {
-    background-color: #8bf5cc;
+    background-color: cyan;
     color:black;
 }
 
 .jumbotron {
     background-image: url("../images/elecMRSA.jpg");
-    background-size: 100%;
+    opacity: 0.85;
+    background-size: 100% 100%;
     text-align: center;
 }
 
+.titletext {
+    opacity: 1;
+    color:darkgreen;
+    text-shadow: 2px 2px black;
+}
+
+.chart {
+    background-color: cyan;
+}
+
 select {
-    border: 2px solid #aeaeb5;
+    border: 5px solid #8181e7;
     border-radius: 6px;
 }
 
 select:focus {
     outline: none;
-    border-color: #26bf47;
-    box-shadow: 0 0 10px #26bf47;
+    border-color: #9b9be2;
+    box-shadow: 0 0 10px #9b9be2;
+}
+
+.well {
+    border: darkblue;
+    border-radius: 2px;
+}
+
+.panel {
+    border: darkblue;
+    border-radius: 2px;
 }
