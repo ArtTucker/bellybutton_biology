@@ -114,7 +114,8 @@ function buildCharts(sample) {
       yaxis: {title: 'OTU IDs'},
       width: 650,
       //margin: {l: 1, r:0},
-      paper_bgcolor: 'cyan'
+      paper_bgcolor: 'cyan',
+      //plot_bgcolor: 'lightgray'
     };
     // Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar', barData, barLayout);
@@ -137,10 +138,11 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: 'Bacteria Cultures per Sample',
       xaxis: {title: 'OTU ID'},
-      margins: {t:30},
+      margins: {t:10},
       hovermode: 'closest',
       width: 650,
-      paper_bgcolor: 'cyan'
+      paper_bgcolor: 'cyan',
+      //plot_bgcolor: 'lightgray'
     };
 
     // Use Plotly to plot the data with the layout.
