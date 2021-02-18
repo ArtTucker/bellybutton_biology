@@ -80,6 +80,7 @@ function buildCharts(sample) {
     var yticks = otuIDs.slice(0,10).map(x => `OTU ${x}`).reverse();
     //console.log(yticks);
 
+    // Bar Chart
     // 8. Create the trace for the bar chart. 
     var trace = {
       type: 'bar',
@@ -102,6 +103,7 @@ function buildCharts(sample) {
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot('bar', barData, barLayout);
 
+    // Bubble Chart
     // 1. Create the trace for the bubble chart.
     var bubbleData = [
    
@@ -113,7 +115,9 @@ function buildCharts(sample) {
     };
 
     // 3. Use Plotly to plot the data with the layout.
-    
+    // Plotly.newPlot('', bubbleData, bubbleLayout);
 
+
+    
   });
 }
